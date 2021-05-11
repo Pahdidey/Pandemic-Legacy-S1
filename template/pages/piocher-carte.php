@@ -15,5 +15,5 @@
 
 	mysqli_close($link);
 
-	header("Location: index.php?page=joueur&idjoueur={$_SESSION['id']}");
+	header("Location: index.php?page=joueur&idjoueur={$_SESSION['id']}#{$_GET['idpart']}");
 ?>

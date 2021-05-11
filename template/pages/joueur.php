@@ -40,7 +40,7 @@
 
                             while ($ligne = mysqli_fetch_array($result)) {
                         ?>
-                        <div class="box">
+                        <div class="box" id="<?php echo $ligne['idJoueur']; ?>">
                             <h2><?php echo $ligne['nomJoueur']; ?> (<?php echo $ligne['nomRole']; ?>)<a href="index.php?page=role&idrole=<?php echo $ligne['idRole']; ?>" class="small-margin-left"><span class="material-icons">remove_red_eye</span></a></h2>
                             <div class="flex">
                                 <?php
@@ -51,7 +51,10 @@
                                 ?>
                                     <div class="flex25">
                                         <img src="./img/cartes/<?php echo $ligne2['nom']; ?>.png" alt="" >
-                                        <p><a href="index.php?page=defausser-carte&idcarte=<?php echo $ligne2['id']; ?>" class="uppercase more">Défausser la carte</a></p>
+                                        <ul class="buttons">
+                                            <li><a href="index.php?page=defausser-carte&idpart=<?php echo $ligne['idJoueur']; ?>&idcarte=<?php echo $ligne2['id']; ?>" class="button CRed"><i class="material-icons">delete</i></a></li>
+                                            <li><a href="index.php?page=echanger-carte&idpart=<?php echo $ligne['idJoueur']; ?>&idcarte=<?php echo $ligne2['id']; ?>" class="button C5"><i class="material-icons">loop</i></a></li>
+                                        </ul>
                                     </div>
                                 <?php } ?>
                               <?php mysqli_free_result($result2); ?>
