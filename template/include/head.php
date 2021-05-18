@@ -1,7 +1,8 @@
 <head>
     <meta charset="utf-8">
     <title>Pandemic Legacy Saison 1</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex, nofollow" />
 
     <!-- <link rel="icon" type="image/png" href="./img/favicon.png" /> -->
 
