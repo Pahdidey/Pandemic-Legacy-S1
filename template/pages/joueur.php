@@ -152,6 +152,9 @@
                                         <div class="flex33">
                                             <a href="./img/cartes/actions3.jpg" class="open-lightbox"><img src="./img/cartes/actions3.jpg" alt=""></a>
                                         </div>
+                                        <div class="flex33">
+                                            <a href="./img/cartes/actions4.jpg" class="open-lightbox"><img src="./img/cartes/actions4.jpg" alt=""></a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
