@@ -292,6 +292,36 @@ body {
 			}
 		}
 	}
+	#sidemenu {
+		position: fixed;
+		left: 0;
+		top: 0;
+		width: 100%;
+		background: @C3;
+		display: flex;
+		justify-content: center;
+		z-index: 1000;
+		opacity: 0;
+		transition: opacity ease 1s;
+		&.anim {
+			opacity: 1;
+		}
+		a {
+			text-decoration: none;
+			color: @Cwh;
+			position: relative;
+			.px-to-rem(padding, 15);
+			&:hover {
+				background: @C2;
+			}
+			&:focus {
+				//background: @C5;
+			}
+			&.active {
+				background: @C5;
+			}
+		}
+	}
 	.objectif {
 		width: 100%;
 		max-width: 300px;

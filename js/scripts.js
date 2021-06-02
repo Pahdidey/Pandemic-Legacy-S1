@@ -65,6 +65,65 @@ $(document).ready(function() {
 
 
 
+
+    // Menu fixe (sidemenu)
+
+    const navigation = document.getElementById('sidemenu');
+
+    if (navigation != null) {
+        window.addEventListener('scroll', () => {
+
+          if(window.scrollY > 20){
+            navigation.classList.add('anim');
+          } else {
+            navigation.classList.remove('anim');
+          }
+
+        })
+    }
+
+
+
+    // Ancres
+
+    function scrollNav() {
+        $('#sidemenu a').click(function(){
+            $(".active").removeClass("active");     
+            $(this).addClass("active");
+            
+            $('html, body').stop().animate({
+                scrollTop: $($(this).attr('href')).offset().top - 50
+            }, 300);
+            return false;
+        });
+    }
+    scrollNav();
+
+
+
+
+    // Ancre active au scroll
+    
+    $(function() {
+        var anchorLink = $('#sidemenu a');
+        $(window).scroll(function() {
+            var windscroll = $(window).scrollTop();
+            if (windscroll >= 1) {
+                $("#joueurs .box").each(function(i) {
+                    if (($(this).position().top - 70) <= windscroll) {
+                        $(".active").removeClass("active");
+                        anchorLink.eq(i).addClass('active');
+                    }
+                });
+            } else {
+                $(".active").removeClass("active");
+            }
+        }).scroll();
+    });
+
+
+   
+
   
 });
 

@@ -131,6 +131,24 @@ form {
 				}
 			}
 		}
+		.card-selection {
+			input[type="radio"] {
+				+ label {
+			    	img {
+			    		border: 5px solid transparent;
+			    		cursor: pointer;
+			    	}
+			    }
+				&:checked {
+				    + label {
+				    	img {
+				    		border-color: @Cerr;
+				    		.px-to-rem(border-radius, 20);
+				    	}
+				    }
+				}
+			}
+		}
 	}
 
 	button {
