@@ -162,7 +162,7 @@ body {
 		.px-to-rem(padding, 20);
 		max-width: 1080px;
     	margin: 0 auto;
-		@media @small {
+		@media @extrasmall {
 			.px-to-rem(padding, 15);
 		}
 		div.box {
@@ -175,7 +175,7 @@ body {
 			-moz-border-radius: 5px;
 			border-radius: 5px;
 			.px-to-rem(margin-bottom, 20);
-			@media @small {
+			@media @extrasmall {
 				.px-to-rem(padding, 15);
 				.px-to-rem(margin-bottom, 15);
 			}
@@ -187,7 +187,7 @@ body {
 			}
 			h2 {
 				.px-to-rem(font-size, 20);
-				@media @small {
+				@media @extrasmall {
 					.px-to-rem(font-size, 17);
 				}
 				.px-to-rem(margin-bottom, 10);
@@ -196,7 +196,7 @@ body {
 			}
 			h3 {
 				.px-to-rem(font-size, 18);
-				@media @small {
+				@media @extrasmall {
 					.px-to-rem(font-size, 16);
 				}
 				.px-to-rem(margin-bottom, 10);
@@ -209,6 +209,8 @@ body {
 			}
 			.buttons {
 				margin: 0;
+				padding-left: 0;
+				text-align: center;
 				li {
 					display: inline-block;
 					.button {
@@ -229,8 +231,16 @@ body {
 		.flex {
 			> div {
 				.px-to-rem(padding, 10);
-				@media @small {
+				@media @extrasmall {
 					.px-to-rem(padding, 10 0);
+				}
+				&.flex25 {
+					@media @small {
+						width: 33.3%;
+					}
+					@media @extrasmall {
+						width: 100%;
+					}
 				}
 			}
 		}
@@ -346,12 +356,12 @@ body {
 	#propconseillers {
 		.flex {
 			justify-content: center;
-			@media @small {
+			@media @extrasmall {
 				justify-content: left;
 			}
 			figure {
 				.px-to-rem(padding, 20);
-				@media @small {
+				@media @extrasmall {
 					width: 50% !important;
 					.px-to-rem(padding, 10);
 				}
@@ -365,11 +375,11 @@ body {
 		}
 		.actions {
 			.px-to-rem(margin-top, 10);
-			@media @small {
+			@media @extrasmall {
 				margin-top: 0;
 			}
 			> .button {
-				@media @small {
+				@media @extrasmall {
 					.px-to-rem(margin-top, 10);
 				}
 			}

@@ -57,7 +57,7 @@ h1 {
 	@media @medium {
 		.px-to-rem(font-size, 30);
 	}
-	@media @small {
+	@media @extrasmall {
 		.px-to-rem(font-size, 20);
 	}
 }
@@ -69,7 +69,7 @@ h2 {
 	@media @medium {
 		.px-to-rem(font-size, 26);
 	}
-	@media @small {
+	@media @extrasmall {
 		.px-to-rem(font-size, 20);
 	}
 }
@@ -79,7 +79,7 @@ h3 {
 	.px-to-rem(margin-bottom, 20);
 	line-height: 1.2;
 	font-weight: @bold;
-	@media @small {
+	@media @extrasmall {
 		.px-to-rem(font-size, 22);
 	}
 }
@@ -217,7 +217,7 @@ p {
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	border-radius: 5px;
-	@media @small {
+	@media @extrasmall {
 		.px-to-rem(margin, 5);
 	}
 	&:hover {
@@ -402,7 +402,7 @@ a {
 	color: @Clink;
 	.px-to-rem(font-size, 16);
 	.px-to-rem(line-height, 26);
-	@media @small {
+	@media @extrasmall {
 		.px-to-rem(font-size, 16);
 		.px-to-rem(line-height, 24);
 	}
@@ -468,13 +468,13 @@ a {
 .buttons {
 	&.flex {
 		> div {
-			@media @small {
+			@media @extrasmall {
 				//width: 100%;
 			}
 			.button {
 				width: 100%;
 				height: 100%;
-				@media @small {
+				@media @extrasmall {
 					margin: 0;
 				}
 			}
