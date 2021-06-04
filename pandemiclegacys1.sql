@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:8889
--- Generation Time: May 16, 2021 at 09:55 AM
+-- Generation Time: Jun 04, 2021 at 09:02 PM
 -- Server version: 5.7.32
 -- PHP Version: 7.4.12
 
@@ -39,16 +39,16 @@ CREATE TABLE `pandemiclegacys1_cartes` (
 --
 
 INSERT INTO `pandemiclegacys1_cartes` (`id`, `nom`, `type`, `etat`, `id_joueur`) VALUES
-(1, '1', 'Ville', 'Non disponible', 2),
+(1, '1', 'Ville', 'Disponible', NULL),
 (2, '2', 'Ville', 'Disponible', NULL),
 (3, '3', 'Ville', 'Disponible', NULL),
-(4, '4', 'Ville', 'Non disponible', NULL),
+(4, '4', 'Ville', 'Disponible', NULL),
 (5, '5', 'Ville', 'Disponible', NULL),
-(6, '6', 'Ville', 'Non disponible', 1),
-(7, '7', 'Ville', 'Disponible', NULL),
+(6, '6', 'Ville', 'Disponible', NULL),
+(7, '7', 'Ville', 'Non disponible', 3),
 (8, '8', 'Ville', 'Disponible', NULL),
 (9, '9', 'Ville', 'Disponible', NULL),
-(10, '10', 'Ville', 'Disponible', NULL),
+(10, '10', 'Ville', 'Non disponible', 3),
 (11, '11', 'Ville', 'Disponible', NULL),
 (12, '12', 'Ville', 'Disponible', NULL),
 (13, '13', 'Ville', 'Disponible', NULL),
@@ -59,34 +59,34 @@ INSERT INTO `pandemiclegacys1_cartes` (`id`, `nom`, `type`, `etat`, `id_joueur`)
 (18, '18', 'Ville', 'Disponible', NULL),
 (19, '19', 'Ville', 'Disponible', NULL),
 (20, '20', 'Ville', 'Disponible', NULL),
-(21, '21', 'Ville', 'Disponible', NULL),
-(22, '22', 'Ville', 'Disponible', NULL),
-(23, '23', 'Ville', 'Non disponible', 1),
+(21, '21', 'Ville', 'Non disponible', 2),
+(22, '22', 'Ville', 'Non disponible', 2),
+(23, '23', 'Ville', 'Disponible', NULL),
 (24, '24', 'Ville', 'Disponible', NULL),
-(25, '25', 'Ville', 'Disponible', NULL),
+(25, '25', 'Ville', 'Non disponible', 1),
 (26, '26', 'Ville', 'Disponible', NULL),
 (27, '27', 'Ville', 'Disponible', NULL),
 (28, '28', 'Ville', 'Disponible', NULL),
 (29, '29', 'Ville', 'Disponible', NULL),
 (30, '30', 'Ville', 'Disponible', NULL),
 (31, '31', 'Ville', 'Disponible', NULL),
-(32, '32', 'Ville', 'Non disponible', 2),
-(33, '33', 'Ville', 'Disponible', NULL),
-(34, '34', 'Ville', 'Non disponible', 2),
+(32, '32', 'Ville', 'Disponible', NULL),
+(33, '33', 'Ville', 'Non disponible', 3),
+(34, '34', 'Ville', 'Disponible', NULL),
 (35, '35', 'Ville', 'Disponible', NULL),
 (36, '36', 'Ville', 'Disponible', NULL),
 (37, '37', 'Ville', 'Disponible', NULL),
 (38, '38', 'Ville', 'Disponible', NULL),
-(39, '39', 'Ville', 'Non disponible', NULL),
+(39, '39', 'Ville', 'Non disponible', 3),
 (40, '40', 'Ville', 'Disponible', NULL),
 (41, '41', 'Ville', 'Disponible', NULL),
 (42, '42', 'Ville', 'Disponible', NULL),
-(43, '43', 'Ville', 'Non disponible', 2),
-(44, '44', 'Ville', 'Disponible', NULL),
-(45, '45', 'Ville', 'Disponible', NULL),
-(46, '46', 'Ville', 'Disponible', NULL),
+(43, '43', 'Ville', 'Disponible', NULL),
+(44, '44', 'Ville', 'Non disponible', 1),
+(45, '45', 'Ville', 'Non disponible', 2),
+(46, '46', 'Ville', 'Non disponible', 2),
 (47, '47', 'Ville', 'Disponible', NULL),
-(48, '48', 'Ville', 'Non disponible', NULL),
+(48, '48', 'Ville', 'Disponible', NULL),
 (49, 'aide-flexible', 'Evenement', 'Non disponible', NULL),
 (50, 'aide-gouvernementale', 'Evenement', 'Non disponible', NULL),
 (51, 'base-eloignee', 'Evenement', 'Non disponible', NULL),
@@ -139,11 +139,11 @@ CREATE TABLE `pandemiclegacys1_roles` (
 
 INSERT INTO `pandemiclegacys1_roles` (`id`, `nom`, `fichier`, `id_joueur`) VALUES
 (1, 'Chercheuse', 'chercheuse', NULL),
-(2, 'Expert aux opérations', 'expert-operations', NULL),
+(2, 'Expert aux opérations', 'expert-operations', 1),
 (3, 'Généraliste', 'generaliste', NULL),
-(4, 'Médecin', 'medecin', 1),
-(5, 'Répartiteur', 'repartiteur', 2),
-(6, 'Scientifique', 'scientifique', NULL),
+(4, 'Médecin', 'medecin', 3),
+(5, 'Répartiteur', 'repartiteur', NULL),
+(6, 'Scientifique', 'scientifique', 2),
 (7, 'Spécialiste en mise en quarantaine', 'specialiste-quarantaine', NULL),
 (8, 'Colonel', 'colonel', NULL);
 
