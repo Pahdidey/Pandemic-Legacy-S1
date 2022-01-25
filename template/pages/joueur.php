@@ -193,12 +193,7 @@
 
         <?php mysqli_close($link); ?>
 
-        <script>
-            setInterval("playersReload();", 5000); 
-            function playersReload(){
-              $('#joueurs').load(location.href + ' #joueurs > div');
-            }
-        </script>
+
 
         <?php include(incl . 'footer.php'); ?>
 

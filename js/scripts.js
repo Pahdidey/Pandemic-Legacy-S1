@@ -1,6 +1,19 @@
 $(document).ready(function() {
 
 
+
+    // Reload auto
+
+    setInterval(function(){ 
+      $('#joueurs').load(location.href + ' #joueurs > div');
+    }, 3000);
+
+    
+
+
+
+
+
     // Modale
 
     $(".open-modal").click(function(e){
